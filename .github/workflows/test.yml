@@ -1,0 +1,45 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    strategy:
+      matrix:
+        file_type: ["workspace"]
+        file_name: ["LocalSearch.xcworkspace"]
+        scheme: ["LocalSearch"]
+        destination: ["name=iPhone 8,OS=14.4"]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: "12.4"
+      - name: Bundle Install
+        run: bundle install
+      - name: Dependencies
+        run: bundle exec pod install
+      - name: Build
+        run: |
+          xcodebuild build-for-testing -${file_type} ${file_name} -scheme "${scheme}" -destination "${destination}"
+        env:
+          file_type: ${{ matrix.file_type }}
+          file_name: ${{ matrix.file_name }}
+          scheme: ${{ matrix.scheme }}
+          destination: ${{ matrix.destination }}
+
+      - name: Run tests
+        run: |
+          xcodebuild test-without-building -${file_type} ${file_name} -scheme "${scheme}" -destination "${destination}"
+        env:
+          file_type: ${{ matrix.file_type }}
+          file_name: ${{ matrix.file_name }}
+          scheme: ${{ matrix.scheme }}
+          destination: ${{ matrix.destination }}

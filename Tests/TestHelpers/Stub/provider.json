@@ -1,0 +1,43 @@
+{
+    "features": [
+        "Radiologia",
+        "Laboratorial",
+        "Tomografia"
+    ],
+    "type": "laboratory",
+    "name": "A+ Morumbi",
+    "specialties": [
+        "Radiologia",
+        "Laboratorial",
+        "Tomografia"
+    ],
+    "sub_specialties": [],
+    "addresses": [
+        {
+            "title": "Principal",
+            "address": "Av. Dr. Guilherme Dumont Vilares, 1143, Morumbi, São Paulo - 05640-001"
+        }
+    ],
+    "simplified_addresses": [
+        {
+            "title": "Principal",
+            "address": "Av. Dr. Guilherme Dumont Vilares, 1143, Morumbi, São Paulo - 05640-001"
+        }
+    ],
+    "site": "www.amaissaude.com.br",
+    "phones": [],
+    "working_hours": {
+        "always_open": false,
+        "weekday_text": [
+            "Segunda-feira: 06:30 - 18:00",
+            "Terça-feira: 06:30 - 18:00",
+            "Quarta-feira: 06:30 - 18:00",
+            "Quinta-feira: 06:30 - 18:00",
+            "Sexta-feira: 06:30 - 18:00",
+            "Sábado: 06:30 - 18:00",
+            "Domingo: 06:30 - 12:00"
+        ]
+    },
+    "qualifications": [],
+    "education": []
+}
