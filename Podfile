@@ -6,7 +6,7 @@ target 'LocalSearch' do
   target 'LocalSearchTests' do
     inherit! :search_paths
     pod 'Quick', '~> 3.1.2'
-    pod 'Nimble', '~> 9.0.0'
+    pod 'Nimble', '~> 9.0.1'
     pod 'SnapshotTesting', '~> 1.8.2'
   end
 end

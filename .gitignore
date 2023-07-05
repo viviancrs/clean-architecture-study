@@ -28,7 +28,6 @@ xcuserdata/
 
 # CocoaPods
 Pods/
-Podfile.lock
 
 ### Xcode Patch ###
 *.xcodeproj/*
