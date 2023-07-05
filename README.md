@@ -10,7 +10,7 @@ Project built to study clean architecture concepts. The idea is to solve a local
 - Swift ~> 5
 - Xcode ~> 11.0
 
-ℹ️ To run the tests use simulator iPhone 8 (14.4) because of the snapshots
+ℹ️ To run the tests use simulator iPhone 8 (15.0) because of the snapshots
 
 ## Architecture
 

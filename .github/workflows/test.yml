@@ -15,7 +15,7 @@ jobs:
         file_type: ["workspace"]
         file_name: ["LocalSearch.xcworkspace"]
         scheme: ["LocalSearch"]
-        destination: ["name=iPhone 8,OS=14.4"]
+        destination: ["name=iPhone 8,OS=15.0"]
 
     steps:
       - uses: actions/checkout@v2
