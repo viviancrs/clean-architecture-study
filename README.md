@@ -41,5 +41,5 @@ This project was built with concepts of clean architecture and MVP for the UI la
 ### Test
 
 - [Quick ~> 3.1.2](https://github.com/Quick/Quick): Behavior-driven development framework
-- [Nimble ~> 9.0.0](https://github.com/Quick/Nimble): Matcher framework that allows express expectations using a natural language
+- [Nimble ~> 9.0.1](https://github.com/Quick/Nimble): Matcher framework that allows express expectations using a natural language
 - [SnapshotTesting ~> 1.8.2](https://github.com/pointfreeco/swift-snapshot-testing): Framework for snapshot testing
